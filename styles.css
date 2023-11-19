@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Estilos para la calculadora */
+.calculadora {
+    width: 200px;
+    border: 1px solid #a32020;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(165, 217, 21, 0.1);
+}
+/* Estilos para la pantalla de visualización */
+#display {
+    width: 93%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+/* Estilos para el conjunto de botones */
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+/* Estilos generales para los botones */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    /* Estilos generales */
+    background-color: #eee;/* Fondo gris claro */
+    border: 1px solid #0e0e0e;/* Borde gris */
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Estilos específicos para botones de operadores */
+button[data-type="operator"] {
+    background-color: #ccc;
+}
+/* Estilos específicos para el botón "C" (clear) */
+button[data-type="clear"] {
+    background-color: #e27c7c;
+}
